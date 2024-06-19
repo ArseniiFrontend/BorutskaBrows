@@ -1,2 +1,2 @@
 # BorutskaBrows
-Site about cosmetology
+I started by visiting the website of the service provider. After browsing through the available products, I found the item I wanted and clicked on it. I then selected the desired options, such as size and color, and proceeded to the checkout page. There, I entered my shipping address and payment information carefully. After reviewing everything, I confirmed the order. Shortly after, I received a confirmation email notifying me that my order was successfully placed.v
