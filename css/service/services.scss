@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&display=swap');
+
+$colors: (white: #FFFFFF, pink: #FF1493, black: #000000, light-white: #FAFAFA, grey: #999999); // rgb(22, 22, 22)
+$fonts: (small: 20px, average: 24px);
+$letters: (small: 27.32px, normal: 32.78px);
+$letter-spacing: -0.035em;
+$font: "Kanit", sans-serif;
+$weights: (small: 400, normal: 500, average: 600, high: 700);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: map-get($map: $colors, $key: black) !important;
+}
+
+.navbar-brand {
+    margin-right: 20px;
+    color: map-get($colors, white) !important;
+    font-family: $font !important;
+    font-size: 26px !important;
+    letter-spacing: -1px;
+    line-height: map-get($map: $letters, $key: normal ) !important;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: map-get($colors, pink) !important;
+    }
+}
+
+.nav-link {
+    white-space: nowrap;
+}
+
+.mainNavBar a {
+    font-family: Manrope !important;
+    font-size: map-get($map: $fonts, $key: average);
+    font-weight: map-get($map: $weights, $key: normal);
+    line-height: map-get($map: $letters, $key: normal);
+    color: map-get($colors, white) !important;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: map-get($colors, pink) !important;
+    }
+}
+
+.headerNavbarButton {
+    margin-top: 10px;
+    font-size: map-get($map: $fonts, $key: average) !important;
+    font-family: Manrope !important;
+    font-weight: map-get($map: $weights, $key: normal) !important;
+    line-height: map-get($map: $letters, $key: normal);
+    width: 239px !important;
+    height: 65px !important;
+    padding: 12px 24px 16px 24px !important;
+    border-radius: 50px !important;
+    color: map-get($colors, pink) !important;
+    border: 1px solid map-get($colors, pink) !important;
+    background-color: transparent !important;
+
+    &:hover {
+        color: map-get($colors, white) !important;
+        background-color: map-get($colors, pink) !important;
+    }
+}
+
+.selectpicker {
+    font-family: Manrope !important;
+    background-color: transparent;
+    font-size: map-get($map: $fonts, $key: average);
+    font-weight: map-get($map: $weights, $key: normal);
+    line-height: map-get($map: $letters, $key: normal);
+    color: map-get($colors, white) !important;
+    cursor: pointer;
+    padding-top: 7px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.selectpicker option {
+    background-color: #000000;
+    color: #e82e8b;
+}
+
+.navbar-toggler {
+    border: none !important; 
+    background-color: map-get($colors, pink) !important; 
+
+    &:focus {
+        color: map-get($colors, pink) !important;
+    }
+}
+
+.offcanvas {
+    background-color: map-get($colors, black) !important;
+}
+
+.offcanvas-title {
+    margin-right: 20px;
+    color: map-get($colors, white) !important;
+    font-family: $font !important;
+    font-size: 26px !important;
+    letter-spacing: -1px;
+    line-height: map-get($map: $letters, $key: normal) !important;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.btn-close {
+    background-color: map-get($colors, pink) !important;
+    opacity: 1 !important;
+}
+
+.navbar {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+  
+.navbar-nav .nav-item {
+    margin-right: 25px !important; 
+}
+
+.services-title {
+    font-family: Manrope;
+    text-align: center;
+    font-size: 50px;
+    font-weight: map-get($map: $weights, $key: high);
+    background: linear-gradient(90deg, #e82e8b, #9d259d, #ffd2e8);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 64px;  
+    white-space: nowrap;
+    padding-top: 20px;
+}
+
+.service-section img {
+    max-width: 40%; 
+    height: auto; 
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.service-section h2 {
+    font-family: Manrope;
+    font-size: 44px;
+    font-weight: map-get($map: $weights, $key: high);
+    line-height: 60.8px;
+    color: map-get($map: $colors, $key: white);
+    padding: 50px 0px 0 50px;
+}
+
+.service-section p {
+    font-family: Manrope;
+    color: map-get($map: $colors, $key: white);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+.sectionNavbarButton {
+    font-size: map-get($map: $fonts, $key: average) !important;
+    font-family: Manrope !important;
+    font-weight: map-get($map: $weights, $key: normal) !important;
+    line-height: map-get($map: $letters, $key: normal);
+    width: 239px !important;
+    height: 65px !important;
+    border-radius: 50px !important;
+    color: map-get($colors, pink) !important;
+    border: 1px solid map-get($colors, pink) !important;
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+    animation: fadeIn 3s forwards; 
+
+    &:hover {
+        color: map-get($colors, white) !important;
+        background-color: map-get($colors, pink) !important;
+    }
+}
+
+.services-cards:nth-child(2) .btn,
+.services-cards:nth-child(4) .btn {
+  margin-left: 50px;
+}
+
+.services-cards {
+    padding-top: 40px;
+}
+
+.services-cards:last-child {
+    padding-bottom: 40px;
+}
+
+.footer-section {
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-column {
+    padding-top: 30px !important;
+}
+
+.footer-column a,
+.footer-column p {
+    text-decoration: none !important;
+    font-family: Manrope;
+    font-size: map-get($map: $fonts, $key: small);
+    font-weight: map-get($map: $weights, $key: small);
+    line-height: 26px;
+    transition: all .2s ease;
+
+    &:hover {
+        color: map-get($map: $colors, $key: pink) !important;
+        cursor: pointer;
+    }
+}
+
+.footer-column span {
+    color: map-get($map: $colors, $key: pink);
+    transition: all .2s ease;
+
+    &:hover {
+        filter: brightness(1.4);
+    }
+}
+
+.footer-column h5 {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: map-get($map: $weights, $key: average);
+    line-height: 23.4px;
+    color: map-get($map: $colors, $key: grey);
+    cursor: default;
+}
+
+// .footer-copyright img {
+//     width: 260px;
+//     height: 103px;
+// }
+
+.footer-logo {
+    width: 260px;
+    height: 103px;
+    border: 4px solid map-get($map: $colors, $key: black);
+    color: map-get($colors, black) !important;
+    font-family: $font !important;
+    font-size: 26px !important;
+    letter-spacing: -1px;
+    line-height: map-get($map: $letters, $key: normal ) !important;
+    white-space: nowrap;
+    text-align: center;
+    float: right;
+}
+
+.footer-underline {
+    width: 80%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: map-get($map: $colors, $key: black);
+}
+
+.footer-logo .footer-subtext  {
+    font-size: map-get($map: $fonts, $key: small);
+    color: map-get($map: $colors, $key: black) !important;
+    padding-top: 5px;
+}
+
+.footer-copyright p {
+    font-family: Manrope;
+    font-size: map-get($map: $fonts, $key: small);
+    font-weight: map-get($map: $weights, $key: small);
+    line-height: 26px;
+    color: map-get($map: $colors, $key: grey);
+    cursor: default;
+}
+
+.footer-divider {
+    height: 2px;
+    background-color: #E5E5E5;
+}
+
+.footer-design a {
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: map-get($map: $fonts, $key: small);
+    font-weight: map-get($map: $weights, $key: small);
+    color: map-get($map: $colors, $key: grey);
+    line-height: 26px;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .navbar-nav {
+        margin-top: 20px; 
+      }
+
+      .headerNavbarButton {
+        margin-top: 20px !important; 
+      }
+
+      .service-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 30px;
+      }
+
+      .service-section h2 {
+        font-size: 32px;
+        font-family: Manrope;
+        font-weight: map-get($map: $weights, $key: high);
+        line-height: 32px;
+        text-align: center;
+        padding: 0;
+      }
+
+      .service-section p {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .services-cards .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .services-cards .btn {
+        margin-top: 15px;
+        align-self: center;
+      }
+
+      .services-cards:nth-child(2) .btn,
+      .services-cards:nth-child(4) .btn {
+        margin: 0;
+      }
+    
+      .footer-column a,
+      .footer-column p {
+        font-size: 14px;
+        font-weight: map-get($map: $weights, $key: small);
+        line-height: 19.12px;
+        transition: all .2s ease;
+
+        &:hover {
+            color: map-get($map: $colors, $key: pink) !important;
+            cursor: pointer;
+        }
+      }
+
+      .footer-column span {
+        color: map-get($map: $colors, $key: pink);
+        transition: all .2s ease;
+
+        &:hover {
+            filter: brightness(1.4);
+        }
+      }
+
+      .footer-column h5 {
+        font-size: 12px;
+        font-weight: map-get($map: $weights, $key: average);
+        line-height: 15.6px;      
+      }
+
+      .footer-copyright p {
+        font-size: 14px;
+        font-weight: map-get($map: $weights, $key: small);
+        line-height: 18.2px;
+      }
+
+      .footer-design a {
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: map-get($map: $weights, $key: normal);
+        line-height: 18.2px;
+      }
+
+    //   .footer-copyright img {
+    //     width: 117px;
+    //     height: 48px;
+    //   }
+
+      .footer-logo .footer-subtext {
+        padding-top: 15px !important;
+      }
+
+      .footer-logo {
+        float: left;
+      }
+}
