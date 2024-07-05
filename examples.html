@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Borutska Brows</title>
+        <link rel="stylesheet" href="./css/examples/examples.css">
+        <link rel="icon" href="./icons/header-icon.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-QyJ9z5v6r7w7yHhqCUHfPwje/RVZ7z7cBDt74KwFk+HRkAHEUgpH7tchmC0GPluP5T8+ZYEJYzRwW2T0W3luXQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <section class="gallery-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100 headerNavBar">
+          <div class="container-fluid position-relative">
+            <a class="navbar-brand" href="./index.html">
+              Borutska Beauty
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Borutska Beauty</h5>
+                <button type="button" class="btn-close text-reset prime" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body mainNavBar">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link active lng-abt" aria-current="page" href="./about.html">Обо мне</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active lng-examples" href="./examples.html">Примеры</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active lng-tools" href="./services.html">Услуги</a>
+                  </li>
+                  <li class="nav-item">
+                      <select class="selectpicker show-menu-arrow">
+                        <!-- <option value="lng"></option> -->
+                        <option value="ru" selected>RU</option>
+                        <option value="pl">PL</option>
+                        <option value="ua">UA</option>
+                      </select>
+                  </li>
+                </ul>
+                <div class="d-flex justify-content-center justify-content-lg-end">
+                  <button class="btn btn-primary headerNavbarButton lng-navButton" type="button">Записаться</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <h1 class="text-center galleryTitle lng-galleryTitle">Примеры моих робот</h1>
+        <h3 class="text-center galleryContent lng-galleryContent">Здесь собраны лучшие работы за всю мою профессиональную карьеру</h3>
+        <section class="container-fluid my-5 gallery-section">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card gallery-item position-relative asyncImage" data-src="./img/IMG_7749">
+                        <img src="./img/IMG_7749.JPG" class="card-img-top w-100 photoOne" alt="Gallery Image 1">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h1 class="card-title text-white mb-0 lng-cardGalelryTitleOne">Ламинирование бровей</h1>
+                            <p class="card-text text-white mb-1 lng-cardGalelryContentOne">Ламинирование бровей фиксирует волоски в нужном направлении, делая их ухоженными и выразительными на несколько недель.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card gallery-item position-relative">
+                        <img src="./img/IMG_7748.JPG" class="card-img-top w-100" alt="Gallery Image 2">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h1 class="card-title text-white mb-0 lng-cardGalelryTitleTwo">Ламинирование бровей</h1>
+                            <p class="card-text text-white mb-1 lng-cardGalelryContentTwo">Процедура ламинирования бровей придает им идеальную форму и естественный блеск, избавляя от ежедневного ухода.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card gallery-item position-relative">
+                        <img src="./img/IMG_7741.JPG" class="card-img-top w-100" alt="Gallery Image 1">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h1 class="card-title text-white mb-0 lng-cardGalelryTitleThree">Перманент губ</h1>
+                            <p class="card-text text-white mb-1 lng-cardGalelryContentThree">Идеально для тех, кто хочет всегда выглядеть ухоженно и привлекательно, не тратя много времени на ежедневный макияж.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card gallery-item position-relative">
+                        <img src="./img/IMG_7745.JPG" class="card-img-top w-100" alt="Gallery Image 2">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h1 class="card-title text-white mb-0 lng-cardGalelryTitleFour">Перманент бровей</h1>
+                            <p class="card-text text-white mb-1 lng-cardGalelryContentFour">Используются безопасные пигменты, что гарантирует стойкий и естественный результат.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card gallery-item position-relative">
+                        <img src="./img/IMG_7746.JPG" class="card-img-top w-100" alt="Gallery Image 1">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h1 class="card-title text-white mb-0 lng-cardGalelryTitleFive">Перманент бровей</h1>
+                            <p class="card-text text-white mb-1 lng-cardGalelryContentFive">Подходит для тех, кто хочет сэкономить время на ежедневном макияже и оставаться при этом такой-же красивой</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card gallery-item position-relative">
+                        <img src="./img/IMG_7740.JPG" class="card-img-top w-100" alt="Gallery Image 2">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h1 class="card-title text-white mb-0 lng-cardGalelryTitleSix">Перманент губ</h1>
+                            <p class="card-text text-white mb-1 lng-cardGalelryContentSix">Процедура безопасна, безболезненна и результат сохраняется на длительное время.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card gallery-item position-relative">
+                        <img src="././img/IMG_7750.JPG" class="card-img-top w-100" alt="Gallery Image 2">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h1 class="card-title text-white mb-0 lng-cardGalelryTitleSeven">Ламинирование бровей</h1>
+                            <p class="card-text text-white mb-1 lng-cardGalelryContentSeven">Ламинирование помогает достичь густых и ровных бровей, создавая эффект, который держится до шести недель.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card gallery-item position-relative">
+                        <img src="./img/IMG_7739.JPG" class="card-img-top w-100" alt="Gallery Image 2">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h1 class="card-title text-white mb-0 lng-cardGalelryTitleSeven">Перманент губ</h1>
+                            <p class="card-text text-white mb-1 lng-cardGalelryContentEight">Перманентный макияж губ придает желаемую форму, насыщенный цвет и симметрию.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+    <footer class="bg-light text-dark pt-4 footer-section">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-3 footer-column mx-auto">
+                  <h5 class="lng-footerAndressTitle">Адрес</h5>
+                  <a href="https://maps.app.goo.gl/xdJ8bGQedNFbevnz6" target="_blank" class="text-dark d-block">Ul. Poprzeczna 6 Centrum Kosmetologii I medycyny estetycznej</a>
+                  <h5 class="mt-3 lng-footerNumber">Телефон</h5>
+                  <a href="tel:+48789900076" class="text-dark d-block">+48 789 900 076</a>
+                  <h5 class="mt-3">E-mail</h5>
+                  <a href="mailto:valeriyaboruzkayaa@gmail.com" target="_blank" class="text-dark d-block"><span>valeriyaboruzkayaa@gmail.com</span></a>
+              </div>
+              <div class="col-md-3 footer-column mx-auto">
+                  <h5 class="lng-footerTools">Услуги</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-dark lng-footerToolOne">Пермамент бровей</a></li>
+                      <li><a href="#" class="text-dark lng-footerToolTwo">Пермамент губ</a></li>
+                      <li><a href="#" class="text-dark lng-footerToolThree">Межресничка</a></li>
+                      <li><a href="#" class="text-dark lng-footerToolFour">Ламинирование бровей</a></li>
+                      <li><a href="#" class="text-dark lng-footerToolFive">Ламинирование ресниц</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 footer-column mx-auto">
+                  <h5 class="lng-footerPages">Страницы</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="./about.html" class="text-dark lng-footerAbout">Обо мне</a></li>
+                      <li><a href="./examples.html" class="text-dark lng-footerExamples">Примеры</a></li>
+                      <li><a href="./services.html" class="text-dark lng-footerTool">Услуги</a></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <div class="container-fluid mt-4 footer-bottom">
+            <div class="row footer-copyright">
+                <div class="col-md-6">
+                    <p class="text-left">© 2024 Borutska Brows</p>
+                </div>
+                <div class="col-md-6 text-end">
+                  <div class="footer-logo">
+                    <h1>BORUTSKA</h1>
+                    <div class="footer-underline"></div>
+                    <p class="footer-subtext">Borutska Brows</p>  
+                  </div>
+                    <!-- <img src="./img/logo.png" alt="Логотип" class="img-fluid"> -->
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="text-center footer-design">
+                <a href="https://www.fiverr.com/arsenii_usenko?up_rollout=true">Development: Arsenii Usenko</a>
+            </div>
+        </div>
+      </footer>
+
+
+
+    
+    <script src="./js/lang.js"></script>
+    <script src="./js/scrypt.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
