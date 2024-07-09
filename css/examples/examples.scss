@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&display=swap');
+
+$colors: (white: #FFFFFF, pink: #FF1493, black: #000000, light-white: #FAFAFA, grey: #999999); // rgb(22, 22, 22)
+$fonts: (small: 20px, average: 24px);
+$letters: (small: 27.32px, normal: 32.78px);
+$letter-spacing: -0.035em;
+$font: "Kanit", sans-serif;
+$weights: (small: 400, normal: 500, average: 600, high: 700);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: map-get($map: $colors, $key: black) !important;
+}
+
+.navbar-brand {
+    margin-right: 20px;
+    color: map-get($colors, white) !important;
+    font-family: $font !important;
+    font-size: 26px !important;
+    letter-spacing: -1px;
+    line-height: map-get($map: $letters, $key: normal ) !important;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: map-get($colors, pink) !important;
+    }
+}
+
+.nav-link {
+    white-space: nowrap;
+}
+
+.mainNavBar a {
+    font-family: Manrope !important;
+    font-size: map-get($map: $fonts, $key: average);
+    font-weight: map-get($map: $weights, $key: normal);
+    line-height: map-get($map: $letters, $key: normal);
+    color: map-get($colors, white) !important;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: map-get($colors, pink) !important;
+    }
+}
+
+.headerNavbarButton {
+    margin-top: 10px;
+    font-size: map-get($map: $fonts, $key: average) !important;
+    font-family: Manrope !important;
+    font-weight: map-get($map: $weights, $key: normal) !important;
+    line-height: map-get($map: $letters, $key: normal);
+    width: 239px !important;
+    height: 65px !important;
+    padding: 12px 24px 16px 24px !important;
+    border-radius: 50px !important;
+    color: map-get($colors, pink) !important;
+    border: 1px solid map-get($colors, pink) !important;
+    background-color: transparent !important;
+
+    &:hover {
+        color: map-get($colors, white) !important;
+        background-color: map-get($colors, pink) !important;
+    }
+}
+
+.selectpicker {
+    font-family: Manrope !important;
+    background-color: transparent;
+    font-size: map-get($map: $fonts, $key: average);
+    font-weight: map-get($map: $weights, $key: normal);
+    line-height: map-get($map: $letters, $key: normal);
+    color: map-get($colors, white) !important;
+    cursor: pointer;
+    padding-top: 7px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.selectpicker option {
+    background-color: #000000;
+    color: #e82e8b;
+}
+
+.navbar-toggler {
+    border: none !important; 
+    background-color: map-get($colors, pink) !important; 
+
+    &:focus {
+        color: map-get($colors, pink) !important;
+    }
+}
+
+.offcanvas {
+    background-color: map-get($colors, black) !important;
+}
+
+.offcanvas-title {
+    margin-right: 20px;
+    color: map-get($colors, white) !important;
+    font-family: $font !important;
+    font-size: 26px !important;
+    letter-spacing: -1px;
+    line-height: map-get($map: $letters, $key: normal) !important;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.btn-close {
+    background-color: map-get($colors, pink) !important;
+    opacity: 1 !important;
+}
+
+.navbar {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+  
+.navbar-nav .nav-item {
+    margin-right: 25px !important; 
+}
+
+.galleryTitle {
+    font-family: Manrope;
+    font-size: 64px;
+    font-weight: map-get($map: $weights, $key: high);
+    line-height: 60.8px;
+    background: linear-gradient(90deg, #e82e8b, #9d259d, #ffd2e8);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.galleryContent {
+    font-family: Manrope;
+    font-size: map-get($map: $fonts, $key: small);
+    font-weight: map-get($map: $weights, $key: small);
+    line-height: map-get($map: $letters, $key: small);
+    color: map-get($map: $colors, $key: white);
+}
+
+.card-img-top {
+    height: 750px !important;
+    max-height: 800px; 
+    object-fit: cover;
+    border-radius: 30px !important;
+    cursor: pointer !important;
+}
+
+.card-img-overlay {
+    bottom: -20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1.8), transparent); /* Градиент для тени */
+    padding: 0.5rem;
+    box-shadow: 0px -50px 50px -20px rgba(0, 0, 0, 1.8); /* Тень вверх */
+}
+
+.gallery-item {
+    border: none;
+    border-radius: 30px !important;
+    background-color: #000000 !important;
+    transition: all .8s ease !important;
+}
+
+.gallery-item:hover {
+    cursor: pointer !important;
+    transform: scale(1.05);
+    z-index: 3 !important;
+}
+.gallery-section {
+    padding-bottom: 40px;
+}
+
+.card-title {
+    font-family: Manrope;
+    font-size: 44px;
+    font-weight: map-get($map: $weights, $key: high);
+    line-height: 60.8px;
+    color: map-get($map: $colors, $key: white);
+}
+
+.card-text {
+    font-family: Manrope;
+    color: map-get($map: $colors, $key: white);
+}
+
+.card-img-overlay h5
+
+.footer-section {
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-column {
+    padding-top: 30px !important;
+}
+
+.footer-column a,
+.footer-column p {
+    text-decoration: none !important;
+    font-family: Manrope;
+    font-size: map-get($map: $fonts, $key: small);
+    font-weight: map-get($map: $weights, $key: small);
+    line-height: 26px;
+    transition: all .2s ease;
+
+    &:hover {
+        color: map-get($map: $colors, $key: pink) !important;
+        cursor: pointer;
+    }
+}
+
+.footer-column span {
+    color: map-get($map: $colors, $key: pink);
+    transition: all .2s ease;
+
+    &:hover {
+        filter: brightness(1.4);
+    }
+}
+
+.footer-column h5 {
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: map-get($map: $weights, $key: average);
+    line-height: 23.4px;
+    color: map-get($map: $colors, $key: grey);
+    cursor: default;
+}
+
+// .footer-copyright img {
+//     width: 260px;
+//     height: 103px;
+// }
+
+.footer-logo {
+    width: 260px;
+    height: 103px;
+    border: 4px solid map-get($map: $colors, $key: black);
+    color: map-get($colors, black) !important;
+    font-family: $font !important;
+    font-size: 26px !important;
+    letter-spacing: -1px;
+    line-height: map-get($map: $letters, $key: normal ) !important;
+    white-space: nowrap;
+    text-align: center;
+    float: right;
+}
+
+.footer-underline {
+    width: 80%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: map-get($map: $colors, $key: black);
+}
+
+.footer-logo .footer-subtext  {
+    font-size: map-get($map: $fonts, $key: small);
+    color: map-get($map: $colors, $key: black) !important;
+    padding-top: 5px;
+}
+
+.footer-copyright p {
+    font-family: Manrope;
+    font-size: map-get($map: $fonts, $key: small);
+    font-weight: map-get($map: $weights, $key: small);
+    line-height: 26px;
+    color: map-get($map: $colors, $key: grey);
+    cursor: default;
+}
+
+.footer-divider {
+    height: 2px;
+    background-color: #E5E5E5;
+}
+
+.footer-design a {
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: map-get($map: $fonts, $key: small);
+    font-weight: map-get($map: $weights, $key: small);
+    color: map-get($map: $colors, $key: grey);
+    line-height: 26px;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .navbar-nav {
+        margin-top: 20px; 
+      }
+
+      .headerNavbarButton {
+        margin-top: 20px !important; 
+      }
+
+      .galleryTitle {
+        font-size: 35px;
+        margin-left: 20px;
+        font-family: Manrope;
+        font-weight: map-get($map: $weights, $key: high);
+        line-height: 32px;
+        padding-top: 40px;
+      }
+    
+      .galleryContent {
+        font-size: 16px;
+        margin-top: 30px;
+      }
+    
+      .footer-column a,
+      .footer-column p {
+        font-size: 14px;
+        font-weight: map-get($map: $weights, $key: small);
+        line-height: 19.12px;
+        transition: all .2s ease;
+
+        &:hover {
+            color: map-get($map: $colors, $key: pink) !important;
+            cursor: pointer;
+        }
+      }
+
+      .footer-column span {
+        color: map-get($map: $colors, $key: pink);
+        transition: all .2s ease;
+
+        &:hover {
+            filter: brightness(1.4);
+        }
+      }
+
+      .footer-column h5 {
+        font-size: 12px;
+        font-weight: map-get($map: $weights, $key: average);
+        line-height: 15.6px;      
+      }
+
+      .footer-copyright p {
+        font-size: 14px;
+        font-weight: map-get($map: $weights, $key: small);
+        line-height: 18.2px;
+      }
+
+      .footer-design a {
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: map-get($map: $weights, $key: normal);
+        line-height: 18.2px;
+      }
+
+    //   .footer-copyright img {
+    //     width: 117px;
+    //     height: 48px;
+    //   }
+
+      .footer-logo .footer-subtext {
+        padding-top: 15px !important;
+      }
+
+      .footer-logo {
+        float: left;
+      }
+}
