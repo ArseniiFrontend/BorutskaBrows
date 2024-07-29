@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #000000 !important;
+}
+
+.navbar-brand {
+  margin-right: 20px;
+  color: #FFFFFF !important;
+  font-family: "Kanit", sans-serif !important;
+  font-size: 26px !important;
+  letter-spacing: -1px;
+  line-height: 32.78px !important;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #FF1493 !important;
+}
+
+.nav-link {
+  white-space: nowrap;
+}
+
+.mainNavBar a {
+  font-family: Manrope !important;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32.78px;
+  color: #FFFFFF !important;
+  transition: all 0.3s ease;
+}
+.mainNavBar a:hover {
+  color: #FF1493 !important;
+}
+
+.headerNavbarButton {
+  margin-top: 10px;
+  font-size: 24px !important;
+  font-family: Manrope !important;
+  font-weight: 500 !important;
+  line-height: 32.78px;
+  width: 239px !important;
+  height: 65px !important;
+  padding: 12px 24px 16px 24px !important;
+  border-radius: 50px !important;
+  color: #FF1493 !important;
+  border: 1px solid #FF1493 !important;
+  background-color: transparent !important;
+}
+.headerNavbarButton:hover {
+  color: #FFFFFF !important;
+  background-color: #FF1493 !important;
+}
+
+.selectpicker {
+  font-family: Manrope !important;
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32.78px;
+  color: #FFFFFF !important;
+  cursor: pointer;
+  padding-top: 7px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.selectpicker option {
+  background-color: #000000;
+  color: #e82e8b;
+}
+
+.navbar-toggler {
+  border: none !important;
+  background-color: #FF1493 !important;
+}
+.navbar-toggler:focus {
+  color: #FF1493 !important;
+}
+
+.offcanvas {
+  background-color: #000000 !important;
+}
+
+.offcanvas-title {
+  margin-right: 20px;
+  color: #FFFFFF !important;
+  font-family: "Kanit", sans-serif !important;
+  font-size: 26px !important;
+  letter-spacing: -1px;
+  line-height: 32.78px !important;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.btn-close {
+  background-color: #FF1493 !important;
+  opacity: 1 !important;
+}
+
+.navbar {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 25px !important;
+}
+
+.services-title {
+  font-family: Manrope;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #e82e8b, #9d259d, #ffd2e8);
+  background-size: 200%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 64px;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+.service-section img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.service-section h2 {
+  font-family: Manrope;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60.8px;
+  color: #FFFFFF;
+  padding: 50px 0px 0 50px;
+}
+
+.service-section p {
+  font-family: Manrope;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+}
+
+.sectionNavbarButton {
+  font-size: 24px !important;
+  font-family: Manrope !important;
+  font-weight: 500 !important;
+  line-height: 32.78px;
+  width: 239px !important;
+  height: 65px !important;
+  border-radius: 50px !important;
+  color: #FF1493 !important;
+  border: 1px solid #FF1493 !important;
+  background-color: transparent !important;
+  transition: all 0.3s ease;
+  animation: fadeIn 3s forwards;
+}
+.sectionNavbarButton:hover {
+  color: #FFFFFF !important;
+  background-color: #FF1493 !important;
+}
+
+.services-cards:nth-child(2) .btn,
+.services-cards:nth-child(4) .btn {
+  margin-left: 50px;
+}
+
+.services-cards {
+  padding-top: 40px;
+}
+
+.services-cards:last-child {
+  padding-bottom: 40px;
+}
+
+.footer-section {
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-column {
+  padding-top: 30px !important;
+}
+
+.footer-column a,
+.footer-column p {
+  text-decoration: none !important;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  transition: all 0.2s ease;
+}
+.footer-column a:hover,
+.footer-column p:hover {
+  color: #FF1493 !important;
+  cursor: pointer;
+}
+
+.footer-column span {
+  color: #FF1493;
+  transition: all 0.2s ease;
+}
+.footer-column span:hover {
+  filter: brightness(1.4);
+}
+
+.footer-column h5 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  color: #999999;
+  cursor: default;
+}
+
+.footer-logo {
+  width: 260px;
+  height: 103px;
+  border: 4px solid #000000;
+  color: #000000 !important;
+  font-family: "Kanit", sans-serif !important;
+  font-size: 26px !important;
+  letter-spacing: -1px;
+  line-height: 32.78px !important;
+  white-space: nowrap;
+  text-align: center;
+  float: right;
+}
+
+.footer-underline {
+  width: 80%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #000000;
+}
+
+.footer-logo .footer-subtext {
+  font-size: 20px;
+  color: #000000 !important;
+  padding-top: 5px;
+}
+
+.footer-copyright p {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #999999;
+  cursor: default;
+}
+
+.footer-divider {
+  height: 2px;
+  background-color: #E5E5E5;
+}
+
+.footer-design a {
+  text-decoration: none;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 26px;
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .navbar-nav {
+    margin-top: 20px;
+  }
+  .headerNavbarButton {
+    margin-top: 20px !important;
+  }
+  .service-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+  .service-section h2 {
+    font-size: 32px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    padding: 0;
+  }
+  .service-section p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .services-cards .col-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-cards .btn {
+    margin-top: 15px;
+    align-self: center;
+  }
+  .services-cards:nth-child(2) .btn,
+  .services-cards:nth-child(4) .btn {
+    margin: 0;
+  }
+  .footer-column a,
+  .footer-column p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.12px;
+    transition: all 0.2s ease;
+  }
+  .footer-column a:hover,
+  .footer-column p:hover {
+    color: #FF1493 !important;
+    cursor: pointer;
+  }
+  .footer-column span {
+    color: #FF1493;
+    transition: all 0.2s ease;
+  }
+  .footer-column span:hover {
+    filter: brightness(1.4);
+  }
+  .footer-column h5 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.6px;
+  }
+  .footer-copyright p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+  }
+  .footer-design a {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+  }
+  .footer-logo .footer-subtext {
+    padding-top: 15px !important;
+  }
+  .footer-logo {
+    float: left;
+  }
+}/*# sourceMappingURL=services.css.map */
