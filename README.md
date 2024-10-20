@@ -2,7 +2,7 @@
 
 I developed a personal portfolio website for my client, who specializes in eyebrow and eyelash services. The project is a four-page multilingual website, which was completed in just over a week and a half. The website was built using Bootstrap 5.0 and the SASS preprocessor to ensure a flexible and scalable design. Additionally, I implemented a customization feature that allows the client to easily adjust font sizes, colors, and other visual elements according to her preferences.
 
-## Link to the web-site
+## Link to the website
 <p align="left">
   <a href="https://arseniifrontend.github.io/BorutskaBrows" target="_blank">
     <img src="https://img.shields.io/badge/Visit-borutskabrows.com-DD2D8E?style=for-the-badge&logo=google-chrome&logoColor=DD2D8E" alt="borutskabrows.com">
