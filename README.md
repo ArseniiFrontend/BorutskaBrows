@@ -5,7 +5,7 @@ I developed a personal portfolio website for my client, who specializes in eyebr
 ## Link to the web-site
 <p align="left">
   <a href="https://arseniifrontend.github.io/BorutskaBrows" target="_blank">
-    <img src="https://img.shields.io/badge/Visit-borutskabrows.com-DD2D8E?style=for-the-badge&logo=google-chrome&logoColor=white" alt="borutskabrows.com">
+    <img src="https://img.shields.io/badge/Visit-borutskabrows.com-DD2D8E?style=for-the-badge&logo=google-chrome&logoColor=DD2D8E" alt="borutskabrows.com">
   </a>
 </p>
 
